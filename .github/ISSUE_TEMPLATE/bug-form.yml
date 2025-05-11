@@ -1,14 +1,14 @@
 name: '🐛Bug'
 description: '버그 이슈를 생성합니다. 버그 및 오류 이슈 템플릿입니다.'
 labels: bug
-title: '[Bug]'
+title: '🐛 [Bug]'
 body:
   - type: input
     id: parentKey
     attributes:
       label: '🎟️ 작업 종류 (Feature Type)'
       description: '작업 종류의 Ticket Number를 기입해주세요'
-      placeholder: 'COM-'
+      value: 'COM-'
     validations:
       required: true
 
