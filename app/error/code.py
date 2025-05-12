@@ -50,3 +50,8 @@ class GatewayTimeout(Enum):
     HTTP_STATUS = status.HTTP_504_GATEWAY_TIMEOUT
     CODE = 504
     MESSAGE = "게이트웨이 응답이 없습니다."
+
+class RealEstateAnswerCreateFail(Enum):
+    HTTP_STATUS = status.HTTP_503_SERVICE_UNAVAILABLE
+    CODE = 503
+    MESSAGE = "부동산 질문에 대한 답변 생성에 실패했습니다."
