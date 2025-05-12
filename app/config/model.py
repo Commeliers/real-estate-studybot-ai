@@ -1,16 +1,22 @@
+from langchain_openai import AzureChatOpenAI
 import os
 from dotenv import load_dotenv
-from openai import AzureOpenAI
 
-# 환경 변수 로드
 load_dotenv()
 
-# AzureOpenAI 클라이언트 초기화
-client = AzureOpenAI(
-    api_key=os.getenv("OPENAI_API_KEY"),
-    api_version=os.getenv("OPENAI_API_VERSION"),
-    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
-)
+# .env 파일에서 값 읽기
+AZURE_OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_TYPE = os.getenv("OPENAI_API_TYPE")
+AZURE_OPENAI_API_VERSION = os.getenv("OPENAI_API_VERSION")
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
 
-# Azure 포털에서 생성한 배포 이름(deployment name)
-DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+# AzureChatOpenAI 인스턴스 생성
+study_model = AzureChatOpenAI(
+    azure_endpoint=AZURE_OPENAI_ENDPOINT,
+    openai_api_type=AZURE_OPENAI_TYPE,
+    openai_api_key=AZURE_OPENAI_API_KEY,
+    api_version=AZURE_OPENAI_API_VERSION,
+    deployment_name=AZURE_OPENAI_CHAT_DEPLOYMENT_NAME,
+    temperature=0.1,
+)
