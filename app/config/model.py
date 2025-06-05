@@ -18,5 +18,11 @@ study_model = AzureChatOpenAI(
     openai_api_key=AZURE_OPENAI_API_KEY,
     api_version=AZURE_OPENAI_API_VERSION,
     deployment_name=AZURE_OPENAI_CHAT_DEPLOYMENT_NAME,
-    temperature=0.1,
+    
+    # 모델 호출 제약 설정
+    max_tokens=300,
+    temperature=0.0,
+    top_p=1.0,
+    frequency_penalty=0.0,
+    presence_penalty=0.0,
 )
