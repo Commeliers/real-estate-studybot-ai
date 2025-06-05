@@ -55,3 +55,8 @@ class RealEstateAnswerCreateFail(Enum):
     HTTP_STATUS = status.HTTP_503_SERVICE_UNAVAILABLE
     CODE = 503
     MESSAGE = "부동산 질문에 대한 답변 생성에 실패했습니다."
+
+class NotRealEstateQuestion(Enum):
+    HTTP_STATUS = status.HTTP_400_BAD_REQUEST
+    CODE = 4001
+    MESSAGE = "부동산 관련 질문이 아닙니다. 부동산과 관련된 질문을 해주세요. 😁"
