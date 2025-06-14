@@ -15,6 +15,20 @@
 
 ---
 
+## 📜 인프라 아키텍처 구성도
+
+### 전체 아키텍처
+
+![homeprotector_아키텍처](https://github.com/user-attachments/assets/4ed3c273-7138-479f-8afb-2bc402dbc15e)
+
+### AI 아키텍처
+<img width="221" alt="image" src="https://github.com/user-attachments/assets/49293e23-528b-4f73-a568-bbaf25fa1b9f" />
+
+
+
+---
+
+
 ## 🔑 주요 특징
 
 - **LangChain + Azure OpenAI**  
