@@ -83,7 +83,7 @@ real-estate-studybot-ai/
 
 ```
 
-## 서버 실행
+## ▶️ 서버 실행
 ```
 # 실행
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
@@ -92,7 +92,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 nohup uvicorn app.main:app --host 0.0.0.0 --port 8000 > uvicorn.log 2>&1 &
 ```
 
-## 라이브러리 설치
+## 📚 라이브러리 설치
 ```
 pip install fastapi uvicorn python-dotenv openai pydantic langchain-openai langchain-core langchain
 ```
