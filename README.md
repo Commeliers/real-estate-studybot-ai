@@ -12,6 +12,12 @@
 
 ![image](https://github.com/user-attachments/assets/aed1a744-015d-454b-ad6d-3088fab8873b)
 
+---
+
+## 💻 실제 구현 화면
+
+<img width="1146" alt="image" src="https://github.com/user-attachments/assets/fb96c9fa-a1d3-4f89-a830-1d40e204b691" />
+
 
 ---
 
