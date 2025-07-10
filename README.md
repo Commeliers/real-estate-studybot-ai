@@ -16,6 +16,8 @@
 
 ## 💻 실제 구현 화면
 
+<img width="1147" height="644" alt="image" src="https://github.com/user-attachments/assets/4ef1130e-ace8-49b6-ac18-0ae3a61210a0" />
+
 <img width="1146" alt="image" src="https://github.com/user-attachments/assets/fb96c9fa-a1d3-4f89-a830-1d40e204b691" />
 
 
